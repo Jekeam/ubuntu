@@ -1,0 +1,12 @@
+[Unit]
+Description=bot broker telegram
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/home/bot/
+ExecStart=/usr/bin/python3.6 /home/bot/bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
