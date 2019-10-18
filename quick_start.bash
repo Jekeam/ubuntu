@@ -20,7 +20,17 @@ apt-get update && apt-get upgrade
 sudo apt install xfce4
 # start GUI
 sudo startx
+# change default terminal emulator for manu
 
+# 
+locale
+# 
+sudo locale-gen ru_RU
+sudo locale-gen ru_RU.utf8
+# 
+sudo dpkg-reconfigure locales
+#
+sudo update-locale LANG=ru_RU.UTF-8
 
 
 # install ifconfig
