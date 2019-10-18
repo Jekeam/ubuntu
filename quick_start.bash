@@ -2,6 +2,14 @@
 passwd
 
 
+# /etc/apt/sources.list delete all and add rows:
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic main restricted
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic universe
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates universe
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic multiverse
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+
 
 # update and upgrade system
 apt-get update && apt-get upgrade
