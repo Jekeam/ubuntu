@@ -21,6 +21,7 @@ sudo apt install xfce4
 # start GUI
 sudo startx
 # change default terminal emulator for manu
+apt install xfce4-taskmanager
 
 # 
 locale
