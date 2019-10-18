@@ -55,3 +55,11 @@ mysqldump --databases db1 > dump.sql -u root -p
 mysql < dump.sql -u root -p
 
 
+
+
+# systemd
+/etc/systemd/system/NAME.service 
+sudo systemctl daemon-reload
+sudo systemctl enable sitbot.service
+sudo systemctl start sitbot.service
+
