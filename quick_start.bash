@@ -82,3 +82,10 @@ sudo systemctl daemon-reload
 sudo systemctl enable sitbot.service
 sudo systemctl start sitbot.service
 
+
+
+# Programs
+sudo apt update
+sudo apt install firefox
+sudo apt install snapd
+sudo snap install telegram-sergiusens
