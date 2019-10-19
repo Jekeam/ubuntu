@@ -66,13 +66,15 @@ sudo apt install mysql-server
 sudo mysql_secure_installation
 # create schema dumps
 mysqldump -u root -p <schema_name|--allatabase> > <file_name>.sql
+# Explorer
+sudo apt update
+sudo apt install mysql-workbench
 
 # new db on server 2
 # upload
 mysqldump --databases db1 > dump.sql -u root -p
 # download
 mysql < dump.sql -u root -p
-
 
 
 
@@ -88,4 +90,3 @@ sudo systemctl start sitbot.service
 sudo apt update
 sudo apt install firefox
 sudo apt install snapd
-sudo snap install telegram-sergiusens
