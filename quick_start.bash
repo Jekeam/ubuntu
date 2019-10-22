@@ -77,7 +77,7 @@ mysqldump --databases db1 > dump.sql -u root -p
 mysql < dump.sql -u root -p
 
 # mysqladmin Command To Change Root Password
-mysqladmin -u root password newpass
+mysqladmin -u root -p password
 
 
 
