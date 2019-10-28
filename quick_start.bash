@@ -40,10 +40,13 @@ apt install net-tools
 # deleted rm to trsh
 sudo apt-get install trash-cli
 alias rm=trash
+# or add
+alias rm='rm -i' # in file ~/.bashrc
 # You can always access the real rm by using one of the following method:
 # command rm something
 # 'rm' something
 # \rm something
+. ~/.bashrc
 
 # There are also commands to access the trashcan from terminal, trash-list, restore-trash (or trash-restore), 
 # trash-empty installable from package trash-cli (then see their man pages).
