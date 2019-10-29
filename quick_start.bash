@@ -77,8 +77,9 @@ sudo python3.6 get-pip.py
 sudo apt update
 sudo apt install mysql-server
 sudo mysql_secure_installation
+sudo mysql -u root -p
 # create schema dumps
-mysqldump -u root -p <schema_name|--allatabase> > <file_name>.sql
+sudo mysqldump -u root -p <schema_name|--allatabase> > <file_name>.sql
 # Explorer
 sudo apt update
 sudo apt install mysql-workbench
