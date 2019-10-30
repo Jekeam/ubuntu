@@ -79,7 +79,7 @@ sudo apt install mysql-server
 sudo mysql_secure_installation
 sudo mysql -u root -p
 # create schema dumps
-sudo mysqldump -u root -p <schema_name|--allatabase> > <file_name>.sql
+sudo mysqldump -u root -p <schema_name|--all-databases> > <file_name>.sql
 # Explorer
 sudo apt update
 sudo apt install mysql-workbench
