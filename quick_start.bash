@@ -1,7 +1,6 @@
 # change password
 passwd
 
-
 # /etc/apt/sources.list delete all and add rows:
 deb http://ru.archive.ubuntu.com/ubuntu/ bionic main restricted
 deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
@@ -10,11 +9,8 @@ deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates universe
 deb http://ru.archive.ubuntu.com/ubuntu/ bionic multiverse
 deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
 
-
 # update and upgrade system
 apt-get update && apt-get upgrade
-
-
 
 # install GUI
 sudo apt install xfce4
@@ -33,7 +29,6 @@ sudo dpkg-reconfigure locales
 #
 sudo update-locale LANG=ru_RU.UTF-8
 
-
 # install ifconfig
 apt install net-tools
 
@@ -51,27 +46,20 @@ alias rm='rm -i' # in file ~/.bashrc
 # There are also commands to access the trashcan from terminal, trash-list, restore-trash (or trash-restore), 
 # trash-empty installable from package trash-cli (then see their man pages).
 
-
 # SVN
 sudo apt install subversion
 # Change timezone
 sudo dpkg-reconfigure tzdata
 date
 
-
-
 # Remove directory with files
 rm -r <folder_name>
-
-
 
 # install pip for python3.6
 sudo apt install curl
 sudo apt-get install python3-distutils
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3.6 get-pip.py
-
-
 
 # Install MySQL
 sudo apt update
@@ -93,17 +81,20 @@ mysql < dump.sql -u root -p
 # mysqladmin Command To Change Root Password
 mysqladmin -u root -p password
 
-
-
 # systemd
 /etc/systemd/system/NAME.service 
 sudo systemctl daemon-reload
 sudo systemctl enable sitbot.service
 sudo systemctl start sitbot.service
 
-
-
 # Programs
 sudo apt update
 sudo apt install firefox
 sudo apt install snapd
+
+# git ~/.ssh https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys
+ssh-keygen -t rsa -b 4096 -C "your@email"
+ls -al
+eval $(ssh-agent -s)
+ssh-add git_key.private
+cat git_key.pub
