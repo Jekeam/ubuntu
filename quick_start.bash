@@ -81,6 +81,9 @@ mysql < dump.sql -u root -p
 # mysqladmin Command To Change Root Password
 mysqladmin -u root -p password
 
+# reinstall mysql 
+https://linuxscriptshub.com/uninstall-completely-remove-mysql-ubuntu-16-04/
+
 # systemd
 /etc/systemd/system/NAME.service 
 sudo systemctl daemon-reload
