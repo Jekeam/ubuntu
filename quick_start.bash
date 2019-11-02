@@ -98,3 +98,7 @@ ls -al
 eval $(ssh-agent -s)
 ssh-add git_key.private
 cat git_key.pub
+# or 
+#!/bin/bash
+eval `ssh-agent -s`
+ssh-add
