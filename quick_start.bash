@@ -99,8 +99,8 @@ sudo apt install snapd
 ssh-keygen -t rsa -b 4096 -C "your@email"
 ls -al
 eval $(ssh-agent -s)
-ssh-add git_key.private
-cat git_key.pub
+ssh-add ~/.ssh/github
+cat ~/.ssh/github.public
 # or 
 #!/bin/bash
 eval `ssh-agent -s`
