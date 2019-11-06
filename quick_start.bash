@@ -101,7 +101,8 @@ ls -al
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/github
 cat ~/.ssh/github.public
-# or 
+# add to ~/.ssh/config
+# IdentityFile ~/.ssh/github
 #!/bin/bash
 eval `ssh-agent -s`
 ssh-add
