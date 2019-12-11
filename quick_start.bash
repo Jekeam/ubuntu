@@ -106,3 +106,6 @@ cat ~/.ssh/github.public
 #!/bin/bash
 eval `ssh-agent -s`
 ssh-add
+
+# kill by grep
+kill $(ps awx | grep 'acc_id' | awk '{print $1}')
