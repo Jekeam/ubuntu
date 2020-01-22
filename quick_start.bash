@@ -102,12 +102,13 @@ ssh-keygen -t rsa -b 4096 -C "your@email"
 ls -al
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/github
-cat ~/.ssh/github.pub
+# if command cat - not work!!!
+vi ~/.ssh/github.pub
 # add to ~/.ssh/config
 # vi ~/.ssh/config
 # IdentityFile ~/.ssh/github
 # sudo /etc/init.d/ssh restart
-# check ssh-keygen -l -E md5 -f ~/.ssh/github.pub
+# check: ssh-keygen -l -E md5 -f ~/.ssh/github.pub
 # check in session: ssh-add -l -E md5
 #!/bin/bash
 eval `ssh-agent -s`
