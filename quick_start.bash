@@ -102,8 +102,9 @@ ssh-keygen -t rsa -b 4096 -C "your@email"
 ls -al
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/github
-cat ~/.ssh/github.public
+cat ~/.ssh/github.pub
 # add to ~/.ssh/config
+# vi ~/.ssh/config
 # IdentityFile ~/.ssh/github
 #!/bin/bash
 eval `ssh-agent -s`
