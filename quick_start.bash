@@ -107,6 +107,7 @@ cat ~/.ssh/github.pub
 # vi ~/.ssh/config
 # IdentityFile ~/.ssh/github
 # sudo /etc/init.d/ssh restart
+# check ssh-keygen -l -E md5 -f ~/.ssh/github.pub
 #!/bin/bash
 eval `ssh-agent -s`
 ssh-add
