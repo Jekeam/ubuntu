@@ -96,6 +96,7 @@ sudo apt install firefox
 sudo apt install snapd
 
 # git ~/.ssh https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys
+cd ~/.ssh/
 ssh-keygen -t rsa -b 4096 -C "your@email"
 ls -al
 eval $(ssh-agent -s)
