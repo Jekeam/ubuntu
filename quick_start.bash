@@ -106,6 +106,7 @@ cat ~/.ssh/github.pub
 # add to ~/.ssh/config
 # vi ~/.ssh/config
 # IdentityFile ~/.ssh/github
+# sudo /etc/init.d/ssh restart
 #!/bin/bash
 eval `ssh-agent -s`
 ssh-add
