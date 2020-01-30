@@ -1,3 +1,6 @@
+# kill by grep
+kill $(ps awx | grep 'usr/bin/python3.6 /home/bot/bot.py')
+
 # change password
 passwd
 
