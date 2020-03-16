@@ -1,3 +1,5 @@
+lsb_release -a
+
 # kill by grep
 kill $(ps awx | grep 'usr/bin/python3.6 /home/bot/bot.py')
 
