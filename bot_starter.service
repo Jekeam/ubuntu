@@ -10,9 +10,3 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
-
-
-
-
-# commands
-systemctl list-timers
