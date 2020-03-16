@@ -1,0 +1,8 @@
+[Unit]
+Description=restart scan broker
+[Timer]
+OnUnitActiveSec=3600s
+OnBootSec=0s
+
+[Install]
+WantedBy=scan.service
