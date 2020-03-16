@@ -1,0 +1,12 @@
+[Unit]
+Description=restart scan broker
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3.6 /home/scan/restart_run.py
+WorkingDirectory=/home/scan/
+#Restart=always
+
+[Install]
+WantedBy=multi-user.target
