@@ -88,10 +88,12 @@ mysqladmin -u root -p password
 https://linuxscriptshub.com/uninstall-completely-remove-mysql-ubuntu-16-04/
 
 # systemd
+cd etc/systemd/system/
 /etc/systemd/system/NAME.service 
 sudo systemctl daemon-reload
 sudo systemctl enable sitbot.service
 sudo systemctl start sitbot.service
+systemctl list-timers
 
 # Programs
 sudo apt update
