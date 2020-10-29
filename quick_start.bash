@@ -24,6 +24,12 @@ sudo startx
 # change default terminal emulator for manu
 apt install xfce4-taskmanager
 
+sudo apt-get update
+sudo apt-get install -y xrdp
+sudo apt-get install -y xfce4
+sudo service xrdp restart
+echo xfce4-session >~/.xsession
+
 # 
 locale
 # 
