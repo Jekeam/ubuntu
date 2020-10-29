@@ -4,6 +4,7 @@ lsb_release -a
 kill $(ps awx | grep 'usr/bin/python3.6 /home/bot/bot.py')
 
 # change password
+sudo -s
 passwd
 
 # /etc/apt/sources.list delete all and add rows:
