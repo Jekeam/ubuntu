@@ -136,3 +136,7 @@ kill $(ps awx | grep 'acc_id' | awk '{print $1}')
 # E: Unable to locate package при установке пакетов в ubuntu
 echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" >> /etc/apt/sources.list
 apt-get update
+
+
+# Show listen ports
+netstat -tulpn | grep LISTEN
