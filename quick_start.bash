@@ -82,6 +82,9 @@ sudo -i -u postgres
 psql # выполнять команды
 \q # выход из командной строки
 
+# Статья о том как открыть удаленный доступ к БД
+https://linuxhint.com/install_postgresql_-ubuntu/
+
 # Install MySQL
 sudo apt update
 sudo apt install mysql-server
