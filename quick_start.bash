@@ -73,6 +73,15 @@ sudo apt-get install python3-distutils
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3.6 get-pip.py
 
+# Install PostgreSql:
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+
+# Переключиться на юзера
+sudo -i -u postgres
+psql # выполнять команды
+\q # выход из командной строки
+
 # Install MySQL
 sudo apt update
 sudo apt install mysql-server
