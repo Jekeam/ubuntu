@@ -129,7 +129,7 @@ ls -al
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/github
 # if command cat - not work!!!
-vi ~/.ssh/github.pub
+# if exist file: ~/.ssh/github.pub
 # add to ~/.ssh/config
 # vi ~/.ssh/config
 # IdentityFile ~/.ssh/github
