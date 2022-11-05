@@ -107,8 +107,8 @@ mysqladmin -u root -p password
 
 # postgres
 CREATE ROLE username WITH LOGIN SUPERUSER PASSWORD 'password';
-pg_dump -d postgres --schema=namaz --file="/home/sava/backup_db/postgres_$(date '+%Y_%m_%d_%H_%M').sql"
-"C:\Program Files\pgAdmin 4\v6\runtime\"psql.exe -U postgres -d postgres --port="49155" --password -1 < "C:\Users\jekeam\Documents\postgres_2022_11_05_16_00.sql"
+pg_dump -d postgres --schema=namaz --file="/home/.../backup_db/postgres_$(date '+%Y_%m_%d_%H_%M').sql"
+"C:\Program Files\pgAdmin 4\v6\runtime\"psql.exe -U postgres -d postgres --port="49155" --password -1 < "C:\Users\...\Documents\postgres_2022_11_05_16_00.sql"
 
 # reinstall mysql 
 https://linuxscriptshub.com/uninstall-completely-remove-mysql-ubuntu-16-04/
