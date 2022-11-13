@@ -113,6 +113,7 @@ sudo -i -u postgres
 psql # выполнять команды
 \q # выход из командной строки
 
+CREATE USER davide WITH PASSWORD 'jw8s0F4';
 # add grant to select
 GRANT select ON all tables in schema schema_name TO username;
 GRANT select, update, delete, insert ON all tables in schema schema_name TO username;
