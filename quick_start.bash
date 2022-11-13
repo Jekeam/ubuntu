@@ -1,6 +1,9 @@
  useradd xxx
  passwd xxx
  usermod -aG sudo xxx
+ 
+ # find file by name
+ sudo find /. -iname docker-compose.yml
 
 lsb_release -a
 
