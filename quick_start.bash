@@ -1,3 +1,7 @@
+ useradd xxx
+ passwd xxx
+ usermod -aG sudo xxx
+
 lsb_release -a
 
 # kill by grep
