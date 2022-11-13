@@ -7,6 +7,10 @@
 
 lsb_release -a
 
+# copy by ssh
+sudo apt-get install sshpass
+sshpass -p "pass" scp /path/filename  user@ip:/path/
+
 # kill by grep
 kill $(ps awx | grep 'usr/bin/python3.6 /home/bot/bot.py')
 
