@@ -84,18 +84,6 @@ sudo apt-get install python3-distutils
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3.6 get-pip.py
 
-# Install PostgreSql:
-sudo apt update
-sudo apt install postgresql postgresql-contrib
-
-# Переключиться на юзера
-sudo -i -u postgres
-psql # выполнять команды
-\q # выход из командной строки
-
-# Статья о том как открыть удаленный доступ к БД
-https://linuxhint.com/install_postgresql_-ubuntu/
-
 # Install MySQL
 sudo apt update
 sudo apt install mysql-server
@@ -116,7 +104,24 @@ mysql < dump.sql -u root -p
 # mysqladmin Command To Change Root Password
 mysqladmin -u root -p password
 
+# Install PostgreSql:
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+
+# Переключиться на юзера
+sudo -i -u postgres
+psql # выполнять команды
+\q # выход из командной строки
+
+# add grant to select
+GRANT select ON all tables in schema schema_name TO username;
+GRANT select, update, delete, insert ON all tables in schema schema_name TO username;
+
+# Статья о том как открыть удаленный доступ к БД
+https://linuxhint.com/install_postgresql_-ubuntu/
+
 # postgres
+sudo -u postgres psql 
 CREATE ROLE username WITH LOGIN SUPERUSER PASSWORD 'password';
 pg_dump -d postgres --schema=namaz --file="/home/.../backup_db/postgres_$(date '+%Y_%m_%d_%H_%M').sql"
 "C:\Program Files\pgAdmin 4\v6\runtime\"psql.exe -U postgres -d postgres --port="49155" --password -1 < "C:\Users\...\Documents\postgres_2022_11_05_16_00.sql"
