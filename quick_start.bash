@@ -95,6 +95,9 @@ sudo mysqldump -u root -p <schema_name|--all-databases> > <file_name>.sql
 sudo apt update
 sudo apt install mysql-workbench
 
+# Sort all directories based on their size
+du -sh -- */ | sort -rh  # Directories only
+
 # new db on server 2
 # upload
 mysqldump --databases db1 > dump.sql -u root -p
@@ -126,6 +129,7 @@ sudo -u postgres psql
 CREATE ROLE username WITH LOGIN SUPERUSER PASSWORD 'password';
 pg_dump -d postgres --schema=namaz --file="/home/.../backup_db/postgres_$(date '+%Y_%m_%d_%H_%M').sql"
 "C:\Program Files\pgAdmin 4\v6\runtime\"psql.exe -U postgres -d postgres --port="49155" --password -1 < "C:\Users\...\Documents\postgres_2022_11_05_16_00.sql"
+"
 
 # postgres.conf
 shared_preload_libraries = 'pg_stat_statements'
