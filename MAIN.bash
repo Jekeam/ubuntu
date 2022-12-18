@@ -118,8 +118,30 @@ psql # выполнять команды
 
 CREATE USER davide WITH PASSWORD 'jw8s0F4';
 # add grant to select
+psql -c 'GRANT CONNECT ON DATABASE postgres TO student;'
 GRANT select ON all tables in schema schema_name TO username;
 GRANT select, update, delete, insert ON all tables in schema schema_name TO username;
+
+# Create a read-only user in PostgreSQL
+# 1. To create a new user in PostgreSQL:
+CREATE USER username WITH PASSWORD 'your_password';
+# To learn more about creating PostgreSQL user, visit this post.
+
+2. GRANT the CONNECT access:
+
+# GRANT CONNECT ON DATABASE database_name TO username;
+3. Then GRANT USAGE on schema:
+
+# GRANT USAGE ON SCHEMA schema_name TO username;
+4. GRANT SELECT
+
+Grant SELECT for a specific table:
+GRANT SELECT ON table_name TO username;
+Grant SELECT for multiple tables:
+GRANT SELECT ON ALL TABLES IN SCHEMA schema_name TO username;
+# If you want to grant access to the new table in the future automatically, you have to alter default:
+ALTER DEFAULT PRIVILEGES IN SCHEMA schema_name
+GRANT SELECT ON TABLES TO username;
 
 # Статья о том как открыть удаленный доступ к БД
 https://linuxhint.com/install_postgresql_-ubuntu/
