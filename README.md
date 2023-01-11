@@ -4,6 +4,7 @@
 ```du -hs * | sort -rh | head -10```
 
 ## React App
+Полезное видео: https://www.youtube.com/watch?v=Qu-oyzWIpjI
 
 Для установки всех зависимостей: ```npm install```
 
