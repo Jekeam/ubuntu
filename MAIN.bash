@@ -201,6 +201,11 @@ ssh-add
 # kill by grep
 kill $(ps awx | grep 'acc_id' | awk '{print $1}')
 
+# show file by exists str
+sudo grep -Hr "Flood control exceeded"  ./ | cut -d: -f1 | sort -u
+# show lines
+grep -rnw '/путь/где/ищем/' -e "строка, которую ищем"
+
 
 
 # E: Unable to locate package при установке пакетов в ubuntu
