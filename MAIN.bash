@@ -224,6 +224,6 @@ python -u /home/sava/close_ai/main.py
 
 sudo nohup ./run_bg.sh > output.log &
 
-ps aux | grep close_ai/main.py
+ps -aux|grep close_ai
 
 kill XXX
