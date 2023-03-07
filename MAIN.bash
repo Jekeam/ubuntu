@@ -222,7 +222,7 @@ set -e
 . /home/sava/close_ai/env/bin/activate
 python -u /home/sava/close_ai/main.py
 
-nohup ./run_bg.sh > output.log &
+sudo nohup ./run_bg.sh > output.log &
 
 ps aux | grep close_ai/main.py
 
