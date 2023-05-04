@@ -3,6 +3,12 @@
 ## Cамые большие каталоги
 ```du -hs * | sort -rh | head -10```
 
+## Откат гугл хром
+https://unix.stackexchange.com/questions/233185/install-older-versions-of-google-chrome-stable-on-ubuntu-14-10
+https://www.ubuntuupdates.org/package/google_chrome/stable/main/base/google-chrome-stable
+wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_108.0.5359.124-1_amd64.debudo 
+sudo dpkg -i google-chrome-stable_108.0.5359.124-1_amd64.deb
+
 ## React App
 Полезное видео: https://www.youtube.com/watch?v=Qu-oyzWIpjI
 
