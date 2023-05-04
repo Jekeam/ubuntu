@@ -9,6 +9,18 @@
 `wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_108.0.5359.124-1_amd64.deb`
 `sudo dpkg -i google-chrome-stable_108.0.5359.124-1_amd64.deb`
 
+## Для очистки места на диске можно использовать несколько команд в терминале:
+
+Очистка кэша APT: `sudo apt-get clean`
+
+Удаление ненужных пакетов: `sudo apt-get autoremove`
+
+Очистка лог-файлов: `sudo find /var/log -type f -delete`
+
+Очистка временных файлов: `sudo rm -rf /tmp/*`
+
+После выполнения этих команд можно проверить свободное место на диске с помощью команды `df -h.`
+
 ## React App
 Полезное видео: https://www.youtube.com/watch?v=Qu-oyzWIpjI
 
