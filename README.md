@@ -2,6 +2,7 @@
 
 ## Cамые большие каталоги и файлы
 Каталоги ```cd / && sudo du -hs * | sort -rh | head -10``` 
+
 Файлы ```sudo find / -type f -exec du -h {} + | sort -rh | head -n 10```
 
 ## Откат гугл хром
