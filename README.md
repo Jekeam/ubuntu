@@ -1,7 +1,8 @@
 # Операции с файлами
 
-## Cамые большие каталоги
-```du -hs * | sort -rh | head -10```
+## Cамые большие каталоги и файлы
+Каталоги ```cd / && sudo du -hs * | sort -rh | head -10``` 
+Файлы ```sudo find / -type f -exec du -h {} + | sort -rh | head -n 10```
 
 ## Откат гугл хром
 [stackexchange](https://unix.stackexchange.com/questions/233185/install-older-versions-of-google-chrome-stable-on-ubuntu-14-10)
@@ -19,7 +20,7 @@
 
 Очистка временных файлов: `sudo rm -rf /tmp/*`
 
-После выполнения этих команд можно проверить свободное место на диске с помощью команды `df -h.`
+После выполнения этих команд можно проверить свободное место на диске с помощью команды `df -h`
 
 ## React App
 Полезное видео: https://www.youtube.com/watch?v=Qu-oyzWIpjI
