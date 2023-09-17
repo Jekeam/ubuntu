@@ -3,11 +3,14 @@
 ## Cамые большие каталоги и файлы
 Каталоги ```cd / && sudo du -hs * | sort -rh | head -10``` 
 
+или
+
 ```sudo du -sch /* |grep G```
 
 
 Файлы ```sudo find / -type f -exec du -h {} + | sort -rh | head -n 10```
 
+или
 
 ```find / -mount -type f -ls 2> /dev/null | sort -rnk7 | head -10 | awk '{printf "%10d MB\t%s\n", ($7/1024)/1024,$NF}'```
 
