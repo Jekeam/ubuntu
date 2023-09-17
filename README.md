@@ -8,6 +8,7 @@
 ```sudo du -sch /* |grep G```
 
 
+
 Файлы ```sudo find / -type f -exec du -h {} + | sort -rh | head -n 10```
 
 или
