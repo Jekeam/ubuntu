@@ -3,7 +3,13 @@
 ## Cамые большие каталоги и файлы
 Каталоги ```cd / && sudo du -hs * | sort -rh | head -10``` 
 
+```sudo du -sch /* |grep G```
+
+
 Файлы ```sudo find / -type f -exec du -h {} + | sort -rh | head -n 10```
+
+
+```find / -mount -type f -ls 2> /dev/null | sort -rnk7 | head -10 | awk '{printf "%10d MB\t%s\n", ($7/1024)/1024,$NF}'```
 
 ## Откат гугл хром
 [stackexchange](https://unix.stackexchange.com/questions/233185/install-older-versions-of-google-chrome-stable-on-ubuntu-14-10)
