@@ -58,4 +58,9 @@ app.listen(3000, () => {
 ```
 ```pm2 start server.js```
 
+## Свервер для теста
+`E:\YD\YandexDisk\App\ngrok.exe http 34239`
+
+`python -m http.server 34239`
+
 
